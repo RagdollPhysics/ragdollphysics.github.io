@@ -6,6 +6,8 @@ title: Pages
 
 
 <div style="float: left; width: 75%;">
+    <div class="header1">Recent Posts</div>
+    <div style="height: 20px"></div> <!-- spacer -->
     {% for post in site.posts limit:4 %}
     <div style="padding-bottom: 30px">
         <div style="padding-bottom: 10px"><span class="header2"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></span> - <span>{{ post.date | date_to_string }}</span></div>

@@ -1,0 +1,101 @@
+body
+{
+	background-color: #2D3035;
+}
+
+ul
+{
+    text-align: left;
+}
+
+.header_image
+{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
+    z-index: -1;
+}
+
+.header_text
+{
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: monospace;
+    font-size: 24px;
+}
+
+.header_subtext
+{
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    color: #d6d6d6;
+    text-align: center;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.project_header1
+{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: "Arial", Arial, serif;
+}
+
+.project_header2
+{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: "Arial", Arial, serif;
+}
+
+
+.content-area
+{
+	background-color: #ADADAD;
+    display: block;
+    height: 100%;
+    width: 75%;
+	margin-left: 12.5%;
+	font-family: "Arial", Arial, serif;
+	text-align: center;
+    font-size: 14px;
+    color: #2D3035;
+    padding: 10px;
+}
+
+.navbar
+{
+	margin-left: 12.5%;
+    margin-bottom: 5px;
+}
+
+.navbar > a
+{
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family: monospace;
+	text-decoration: none;
+	margin-left: 5px;
+}
+.navbar > a:hover
+{
+	color: #C9C9C9;
+}
+
+.footer
+{
+    background-color: white;
+    text-align: center;
+}
+

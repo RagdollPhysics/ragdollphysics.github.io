@@ -1,7 +1,38 @@
 ---
-theme :
-  name : bootstrap-3
-layout: default
 ---
 {% include JB/setup %}
-{% include themes/bootstrap-3/page.html %}
+
+<html>
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/style.css" rel="stylesheet" type="text/css">
+    
+    <title>{{ page.title }}</title>
+    <head>
+        <div class="header_image" style="width=1280">
+            <img src="{{ ASSET_PATH }}/images/header.png" height="200" width="1280"></img>
+            <div class="header_text">RagdollPhysics</div>
+        <div class="header_subtext">Everything you never wanted to know</div>
+        </div>
+    </head>
+    <body>
+        <div>
+            <div class="navbar">
+                <a href="/">Home</a>
+                <a href="/projects.html">Projects</a>
+                <a href="http://github.com/TheApadayo/">Github</a>
+                <a href="http://www.youtube.com/user/TheApadayo">Youtube</a>
+            </div>
+            <div class="content-area">
+                {{ content }}
+            </div>
+        </div>
+    </body>
+    
+    <div class="footer">
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
+    </div>
+
+{% include JB/analytics %}
+
+</html>
+

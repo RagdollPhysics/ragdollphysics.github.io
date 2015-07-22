@@ -4,22 +4,21 @@ layout: page
 {% include JB/setup %}
 
 
-Well Hey.... didn't think you would actually get here.....</p>
-Anyways.....</p>
-Github: <a href="http://github.com/TheApadayo/">http://github.com/TheApadayo/</a></p>
-Youtube: <a href="http://www.youtube.com/user/TheApadayo">http://www.youtube.com/user/TheApadayo</a>
-</p>
+<div class="header1">Welcome to RagdollPhysics</div>
 
-<h3>Posts</h1>
+<hr>
+
+<div class="header1">Recent Posts</div>
 <ul class="posts">
-  {% for post in site.posts %}
+    {% for post in site.posts limit:5 %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
+    {% endfor %}
 </ul>
 </p>
 
-<h3>Some Quotes</h3>
-</p>
+<hr>
+
+<div class="header1">Some Quotes</div>
 <ul>
     <li>We're not shooting for realism... We're shooting for awesome.</li>
     <li>Some people say that Obama was responsible for the hurricane. Now, I'm more likely to vote for the guy who is able to control the weather.</li>

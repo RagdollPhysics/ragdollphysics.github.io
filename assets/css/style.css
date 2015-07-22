@@ -1,3 +1,4 @@
+/* Actual HTML elements*/
 body
 {
 	background-color: #2D3035;
@@ -17,7 +18,44 @@ img
     display: block;
 }
 
-.header-image
+a
+{
+    color: black;
+    font-weight: 600;
+}
+
+a:hover
+{
+    color: #1f1f1f;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+hr
+{
+    border: 0;
+    height: 1px;
+    background: #333;
+}
+
+/* text alignment classes */
+.align-left
+{
+    text-align: left;
+}
+
+.align-right
+{
+    text-align: right;
+}
+
+.align-center
+{
+    text-align: center;
+}
+
+/* div classes */
+.banner-image
 {
     position: relative;
     margin-right: auto;
@@ -26,43 +64,48 @@ img
     z-index: -1;
 }
 
-.header-text
+.banner-text
 {
     position: absolute;
     bottom: 100px;
     width: 100%;
     color: #FFFFFF;
-    text-align: center;
     font-family: monospace;
     font-size: 24px;
 }
 
-.header-subtext
+.banner-subtext
 {
     position: absolute;
     bottom: 80px;
     width: 100%;
     color: #d6d6d6;
-    text-align: center;
     font-family: monospace;
     font-size: 16px;
 }
 
-.project-header1
+.header1
 {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
-    text-align: center;
     padding-top: 12px;
     padding-bottom: 12px;
     font-family: "Arial", Arial, serif;
 }
 
-.project-header2
+.header2
+{
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: "Arial", Arial, serif;
+}
+
+.header3
 {
     font-size: 14px;
     font-weight: bold;
-    text-align: center;
     padding-top: 12px;
     padding-bottom: 12px;
     font-family: "Arial", Arial, serif;
@@ -76,7 +119,6 @@ img
     width: 75%;
 	margin-left: 12.5%;
 	font-family: "Arial", Arial, serif;
-	text-align: left;
     font-size: 14px;
     color: #2D3035;
     padding: 10px;
@@ -90,7 +132,8 @@ img
 
 .post-header
 {
-    text-align: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
 }
 
 .navbar
@@ -116,6 +159,12 @@ img
 {
     background-color: white;
     text-align: center;
+}
+
+.spacer-100px
+{
+    height: 100px;
+    display: block;
 }
 
 /* clearfix */

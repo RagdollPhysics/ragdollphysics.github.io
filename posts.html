@@ -4,8 +4,25 @@ title: Pages
 ---
 {% include JB/setup %}
 
-<h3>All Posts</h2>
-<ul>
-{% assign posts_collate = site.posts %}
-{% include JB/posts_collate %}
-</ul>
+
+<div style="float: left; width: 75%;">
+    {% for post in site.posts limit:4 %}
+    <div style="padding-bottom: 30px">
+        <div style="padding-bottom: 10px"><span class="header2"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></span> - <span>{{ post.date | date_to_string }}</span></div>
+        <div style="padding: 0 30px 0 30px">
+            <p>{{ post.content | strip_html | truncatewords:150}}</p>
+            <p><a href="{{ post.url }}">Read more...</a></p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<div style="background: #a8a8a8; width: 25%; float: right; height: 100%;">
+    <div class="header1">All Posts</div>
+    <ul>
+    {% assign posts_collate = site.posts %}
+    {% include JB/posts_collate %}
+    </ul>
+</div>
+
+<div class="clearfix"></div>

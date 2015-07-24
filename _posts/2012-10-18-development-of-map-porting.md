@@ -4,8 +4,9 @@ title: "Development of Map Porting"
 description: ""
 category: 
 tags: []
+author: "TheApadayo"
 ---
-{% include JB/setup %}
+{% include setup %}
 
 A brief (or not so brief) history:
 

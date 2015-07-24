@@ -4,8 +4,9 @@ title: "Fun with Imgur"
 description: ""
 category: 
 tags: []
+author: "TheApadayo"
 ---
-{% include JB/setup %}
+{% include setup %}
 
 So I got bored and wrote a little app that downloads images from imgur at random (just a randomly generated 5 char string). I was completely surprised at the stats of what I found.
 Out of a sample of 100 pictures at random (took about 5 min to get them all):

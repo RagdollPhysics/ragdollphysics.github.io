@@ -4,11 +4,39 @@ title : Archive
 header : Post Archive
 group: navigation
 ---
-{% include JB/setup %}
+{% include setup %}
 
-{% assign posts_collate = site.posts %}
 <div class="header1">All Posts</div>
 <ul>
-{% assign posts_collate = site.posts %}
-{% include JB/posts_collate %}
+{% for post in site.posts  %}
+        {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+        {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+        {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+        {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
+
+        {% if forloop.first %}
+          <div class="header2">{{this_year}}</div>
+          <div class="header3">{{this_month}}</div>
+          <ul>
+        {% endif %}
+
+        <li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+
+        {% if forloop.last %}
+          </ul>
+        {% else %}
+          {% if this_year != next_year %}
+            </ul>
+            <div class="header2">{{next_year}}</div>
+            <div class="header3">{{next_month}}</div>
+            <ul>
+          {% else %}    
+            {% if this_month != next_month %}
+              </ul>
+              <div class="header3">{{next_month}}</div>
+              <ul>
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
 </ul>

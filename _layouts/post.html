@@ -1,13 +1,13 @@
 ---
 ---
-{% include JB/setup %}
+{% include setup %}
 
 <html>
-    {% include includes.html %}
+    {% include includes %}
     
     <title>{{ page.title }}</title>
     
-    {% include header.html %}
+    {% include header %}
     
     <body>
         <div class="content-area">
@@ -34,7 +34,7 @@
               </ul>
             </div>
             <hr>
-            {% include JB/comments %}
+            {% include comments %}
         </div>
     </body>
     
@@ -42,6 +42,6 @@
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
     </div>
 
-{% include JB/analytics %}
+{% include analytics %}
 
 </html>

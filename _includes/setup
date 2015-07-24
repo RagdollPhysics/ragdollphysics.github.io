@@ -1,0 +1,16 @@
+{% assign BASE_PATH = nil %}
+{% assign HOME_PATH = "/" %}
+{% assign ASSET_PATH = "/assets" %}
+
+{% assign is_production = false %}
+{% assign jb_prod_env = "development" %}
+
+{% if jekyll.environment != "development" %}
+  {% assign is_production = true %}
+  {% assign jb_prod_env = jekyll.environment %}
+{% endif %}
+
+{% if site.github %}
+  {% assign is_production = true %}
+  {% assign jb_prod_env = "github" %}
+{% endif %}

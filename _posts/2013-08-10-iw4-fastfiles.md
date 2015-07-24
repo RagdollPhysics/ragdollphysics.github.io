@@ -4,8 +4,9 @@ title: "IW4 Fastfiles"
 description: ""
 category: 
 tags: []
+author: "TheApadayo"
 ---
-{% include JB/setup %}
+{% include setup %}
 
 Recently I got bored and decided to do some poking around in IW4MP.exe. I just kind of searched around and worked on dissembling some of the larger functions in the game. I got to the main zone loading code and decided I should just go ahead and jump right into decoding the zone format. This took a little time to get it figured out but I finally discovered that the format is already almost completely decoded! The internal data that is compressed with zlib is acually just a stream of asset headers with the data behind pointers streamed after it! For example: the rawfile asset has a header of this
 

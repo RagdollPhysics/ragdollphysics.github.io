@@ -4,8 +4,9 @@ title: "Infinity GSC... Or Whatever"
 description: ""
 category: 
 tags: []
+author: "TheApadayo"
 ---
-{% include JB/setup %}
+{% include setup %}
 
 So I've been meaning to write a post about this for a while.  This project that I have been working on, IW5GSC, Infinity GSC, GSC Emulator, or whatever you want to call it.  It is something that I think is a huge accomplishment for me.  While I don't want to release the source of it due to the idiocy of the community (if you actually looked then you could probably find it), I do, however, want to share how it works.  Hopefully there are some of you out there that like this sort of technical analysis.
 
